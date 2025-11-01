@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Survey page demonstrating multiple input types, meter, progress, and output.">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Website Feedback Survey</h1>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Age -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="10" max="100"><br><br>
+
+            <!-- Favorite Color -->
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color"><br><br>
+
+            <!-- Birthday -->
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+
+            <!-- Satisfaction Meter -->
+            <label for="satisfaction">Satisfaction:</label>
+            <meter id="satisfaction" name="satisfaction" min="0" max="10" value="7">70%</meter><br><br>
+
+            <!-- Completion Progress -->
+            <label for="completion">Form Completion:</label>
+            <progress id="completion" value="50" max="100">50%</progress><br><br>
+
+            <!-- Score Output -->
+            <label for="score">Your Score:</label>
+            <input type="range" id="scoreRange" min="0" max="100" value="50" oninput="updateScore()">
+            <output id="scoreOutput" for="scoreRange">50</output><br><br>
+
+            <button type="submit">Submit Survey</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website | Survey</p>
+    </footer>
+
+    <script>
+        // Update output dynamically
+        function updateScore() {
+            const range = document.getElementById('scoreRange');
+            const output = document.getElementById('scoreOutput');
+            output.value = range.value;
+        }
+    </script>
+</body>
+</html>
