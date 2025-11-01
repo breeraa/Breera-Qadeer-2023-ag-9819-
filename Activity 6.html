@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page with a form including email, phone, subject, message, and city suggestions.">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <!-- Personal Info Fieldset -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="tel">Phone:</label>
+                <input type="tel" id="tel" name="tel"><br><br>
+
+                <label for="city">City:</label>
+                <input list="cities" id="city" name="city">
+                <datalist id="cities">
+                    <option value="New York">
+                    <option value="London">
+                    <option value="Paris">
+                    <option value="Tokyo">
+                    <option value="Karachi">
+                </datalist>
+            </fieldset>
+
+            <br>
+
+            <!-- Message Fieldset -->
+            <fieldset>
+                <legend>Message</legend>
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Support</option>
+                    <option value="feedback">Feedback</option>
+                </select><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="6" cols="50" placeholder="Type your message here..."></textarea>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website | Contact Form</p>
+    </footer>
+</body>
+</html>
