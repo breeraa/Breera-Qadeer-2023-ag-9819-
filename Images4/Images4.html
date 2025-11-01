@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscribe Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #3f3f46; /* dark gray background */
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+
+  <div class="flex flex-col md:flex-row bg-[#6b8e71] rounded-2xl overflow-hidden shadow-xl w-11/12 max-w-3xl">
+    
+    <!-- Content Section -->
+    <div class="flex-1 p-8 flex flex-col justify-center text-[#f5f5dc]">
+      <h2 class="text-2xl font-semibold mb-3">
+        Get diet and fitness tips in your inbox
+      </h2>
+      <p class="text-[#e4e4d0] mb-6">
+        Eat better and exercise better. Sign up for the Diet & Fitness newsletter.
+      </p>
+
+      <div class="flex">
+        <input 
+          type="email" 
+          placeholder="Enter your email address" 
+          class="flex-1 px-4 py-2 rounded-l-lg border-none focus:outline-none text-gray-800"
+        />
+        <button 
+          class="bg-[#9acd32] hover:bg-[#7ec850] text-[#1a1a1a] px-5 py-2 rounded-r-lg font-semibold transition-transform duration-300 hover:scale-105">
+          Subscribe
+        </button>
+      </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="flex-1">
+      <img  
+         <img src="salad.jpg" alt="Healthy salad" class="w-full h-full object-cover" />
+
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+
+</body>
+</html>
