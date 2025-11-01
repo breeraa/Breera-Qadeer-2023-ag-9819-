@@ -1,0 +1,200 @@
+/* ================================
+   Cyberpunk Gothic Theme
+   Author: ChatGPT
+   ================================ */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Rajdhani:wght@400;600&display=swap');
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background: radial-gradient(circle at top, #0a0a0f 0%, #000 80%);
+  color: #c7c7c7;
+  font-family: 'Rajdhani', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #090909, #111111, #0d001a);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #4f00ff;
+  box-shadow: 0 0 20px rgba(130, 0, 255, 0.4);
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #9500ff, 0 0 25px #3b00ff;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  gap: 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c7c7c7;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff00e6, #3b00ff);
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #9a00ff;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  padding: 2.5rem 10%;
+}
+
+section {
+  background: rgba(15, 15, 25, 0.8);
+  border: 1px solid rgba(130, 0, 255, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(130, 0, 255, 0.2);
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 35px rgba(255, 0, 240, 0.3);
+}
+
+h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #d7a1ff;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #3b00ff;
+}
+
+p, li {
+  font-size: 1.05rem;
+  color: #d0d0d0;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 2rem;
+  margin-top: 0.8rem;
+}
+
+li {
+  padding: 0.3rem 0;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #0d001a, #090909);
+  color: #a8a8a8;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #3b00ff;
+  box-shadow: 0 0 15px rgba(130, 0, 255, 0.3);
+}
+
+footer a {
+  color: #b780ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px #a800ff;
+}
+
+/* Buttons (if any in forms or registration page) */
+button, input[type="submit"] {
+  background: linear-gradient(90deg, #3b00ff, #ff00e6);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+}
+
+button:hover, input[type="submit"]:hover {
+  box-shadow: 0 0 15px #ff00e6;
+  transform: translateY(-2px);
+}
+
+/* Forms */
+input, textarea, select {
+  width: 100%;
+  background: rgba(20, 20, 30, 0.9);
+  border: 1px solid #3b00ff;
+  color: #e0e0e0;
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #ff00e6;
+  box-shadow: 0 0 10px #a300ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  main {
+    padding: 2rem 6%;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
