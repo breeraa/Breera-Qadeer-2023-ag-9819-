@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page demonstrating audio, video, and image map HTML elements.">
+    <title>Media Examples</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Media Examples</h1>
+    </header>
+
+    <main>
+        <!-- Audio Example -->
+        <section>
+            <h2>Audio Example</h2>
+            <audio controls>
+                <source src="audio/sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Video Example -->
+        <section>
+            <h2>Video Example</h2>
+            <video width="640" height="360" controls>
+                <source src="video/sample-video.mp4" type="video/mp4">
+                <track src="video/sample-subtitles.vtt" kind="subtitles" srclang="en" label="English" default>
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <!-- Optional Image Map Example -->
+        <section>
+            <h2>Image Map Example</h2>
+            <img src="images/sample-map.jpg" alt="Clickable map example" usemap="#example-map">
+            <map name="example-map">
+                <area shape="rect" coords="0,0,100,100" href="https://www.example.com" alt="Top Left">
+                <area shape="circle" coords="200,150,50" href="https://www.example2.com" alt="Circle Link">
+            </map>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website | Media Exercise</p>
+    </footer>
+</body>
+</html>
