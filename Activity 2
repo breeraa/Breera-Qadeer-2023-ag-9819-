@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homepage introducing our site, sections, and contact information.">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1 -->
+        <section>
+            <h2>Latest Updates</h2>
+            <article>
+                <h3>New Features Released</h3>
+                <p>We’re excited to announce new updates to improve your experience. Check out the latest tools and tutorials available now!</p>
+            </article>
+        </section>
+
+        <!-- Section 2 -->
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you’d like to reach out, here’s how you can contact us:</p>
+            <address>
+                <strong>Email:</strong> info@example.com<br>
+                <strong>Phone:</strong> +1 (555) 123-4567<br>
+                <strong>Address:</strong> 123 Learning St, Knowledge City
+            </address>
+        </section>
+
+        <aside>
+            <h3>Did You Know?</h3>
+            <p>Our site offers free resources for learners around the world 🌎.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website | All rights reserved.</p>
+    </footer>
+</body>
+</html>
